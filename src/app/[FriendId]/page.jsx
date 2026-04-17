@@ -6,6 +6,7 @@ import { GoArchive } from "react-icons/go";
 import { LuPhoneCall } from "react-icons/lu";
 import { MdOutlineTextsms } from "react-icons/md";
 import { IoVideocamOutline } from "react-icons/io5";
+import FunctionalBtns from "../components/FunctionalBtns";
 
 const FriendPage = async({params}) => {
     const {FriendId}= await params;
@@ -28,8 +29,8 @@ const FriendPage = async({params}) => {
              <p className="text-gray-500">Preferred : {expectedFriend.email}</p>
                 </div>
                 <div className="btn flex gap-2 items-center px-20.5 w-87 m-2 h-13.25 bg-white text-center py-4 shadow-xl"><RiNotificationSnoozeLine />Snooze 2 weeks</div>
-                <div className="btn  flex gap-2 items-center px-27 w-87 m-2 h-13.25 bg-white text-center py-4 shadow-xl"><GoArchive />Archive</div>
-                <div className="btn  flex gap-2 items-center px-27 w-87 m-2 h-13.25 bg-white text-center text-red-600 py-4 shadow-xl"><RiDeleteBin6Line />Delete</div>
+                <div className="btn flex gap-2 items-center px-27 w-87 m-2 h-13.25 bg-white text-center py-4 shadow-xl"><GoArchive />Archive</div>
+                <div className="btn flex gap-2 items-center px-27 w-87 m-2 h-13.25 bg-white text-center text-red-600 py-4 shadow-xl"><RiDeleteBin6Line />Delete</div>
           </section>
           <section id="Right_Column" className="max-w-184">
            <div className="grid lg:grid-cols-3 gap-2">
@@ -57,18 +58,7 @@ const FriendPage = async({params}) => {
                <p>Quick Check-In</p>
                <main className="flex gap-2 space-y-3 lg:flex-cols-3 md:flex-cols-2 sm:flex-cols-1">
                 
-   <div className="w-[218.67px] h-[95] bg-base-300  flex items-center gap-2 flex-col pt-5 rounded-md">
-                    <span className="text-2xl font-semibold"><LuPhoneCall /></span>
-                    <p>Call</p>
-                </div>
-                <div className="w-[218.67px] h-[95] bg-base-300  flex items-center gap-2 flex-col pt-5 rounded-md">
-                    <span className="text-2xl font-semibold"><MdOutlineTextsms /></span>
-                    <p>Text</p>
-                </div>
-                <div className="w-[218.67px] h-[95] bg-base-300  flex items-center gap-2 flex-col pt-5 rounded-md">
-                    <span className="text-2xl font-semibold"><IoVideocamOutline /></span>
-                    <p>Video</p>
-                </div>
+                 <FunctionalBtns></FunctionalBtns>
               
                 </main>
              
