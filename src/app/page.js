@@ -1,3 +1,4 @@
+import { ToastContainer } from "react-toastify";
 import CounterDiv from "./components/CounterDiv";
 import FriendCard from "./components/FriendCard";
 import Friends from "./components/Friends";
@@ -10,5 +11,6 @@ export default function Home() {
    <CounterDiv></CounterDiv>
    <Friends></Friends>
    {/* <FriendCard></FriendCard> */}
+  
   </>;
 }

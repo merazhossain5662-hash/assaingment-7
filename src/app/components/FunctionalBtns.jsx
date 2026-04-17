@@ -5,6 +5,7 @@ import { LuPhoneCall } from 'react-icons/lu';
 import { MdOutlineTextsms } from 'react-icons/md';
 import friends from "../../../public/data.json";
 import { TimelineContext } from '../../context/Timelineprovidar';
+import { toast } from 'react-toastify';
 
 const FunctionalBtns = ({name}) => {
     
@@ -16,7 +17,18 @@ const FunctionalBtns = ({name}) => {
         type:btnType,
         name: wantedFriend.name,
         date : new Date(),
-       };
+       }; 
+     toast.success(( `${btnType} with ${wantedFriend.name}`), {
+position: "top-center",
+autoClose: 5000,
+hideProgressBar: false,
+closeOnClick: false,
+pauseOnHover: true,
+draggable: true,
+progress: undefined,
+theme: "light",
+
+});
 
         return setTimeline([...timelines,newFriendData])
     }
