@@ -25,9 +25,9 @@ const Navbar = () => {
   <div className="flex-none">
     <ul className="menu menu-horizontal px-1  space-x-1.5">
       <li><Link href="/" className={pathName === "/" ? " bg-[#244D3F] text-white" : ""}><IoHomeOutline />Home</Link></li>
-      <li><Link href="/conten" className={pathName === "/conten" ? " bg-[#244D3F] text-white" : ""}><BsClockHistory />Timeline</Link></li>
+      <li><Link href="/Timeline" className={pathName === "/Timeline" ? " bg-[#244D3F] text-white" : ""}><BsClockHistory />Timeline</Link></li>
       <li>
-       <Link href="/Timeline" className={pathName === "/Timeline" ? " bg-[#244D3F] text-white" : ""}><FiActivity /> Stats</Link>
+       <Link href="/conten" className={pathName === "/conten" ? " bg-[#244D3F] text-white" : ""}><FiActivity /> Stats</Link>
       </li>
     </ul>
   </div>

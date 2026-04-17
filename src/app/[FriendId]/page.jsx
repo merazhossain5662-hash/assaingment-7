@@ -3,9 +3,6 @@ import React from 'react';
 import Image from "next/image";
 import { RiDeleteBin6Line, RiNotificationSnoozeLine } from "react-icons/ri";
 import { GoArchive } from "react-icons/go";
-import { LuPhoneCall } from "react-icons/lu";
-import { MdOutlineTextsms } from "react-icons/md";
-import { IoVideocamOutline } from "react-icons/io5";
 import FunctionalBtns from "../components/FunctionalBtns";
 
 const FriendPage = async({params}) => {
@@ -25,7 +22,7 @@ const FriendPage = async({params}) => {
             <p className="badge bg-[#aae9d4]" key={index}>{tag}</p>
             )}
              </div>
-             <p className="text-gray-500"><small>"{expectedFriend.bio}"</small></p>
+             <p className="text-gray-500"><small>{` "${expectedFriend.bio}" `}</small></p>
              <p className="text-gray-500">Preferred : {expectedFriend.email}</p>
                 </div>
                 <div className="btn flex gap-2 items-center px-20.5 w-87 m-2 h-13.25 bg-white text-center py-4 shadow-xl"><RiNotificationSnoozeLine />Snooze 2 weeks</div>
@@ -58,7 +55,7 @@ const FriendPage = async({params}) => {
                <p>Quick Check-In</p>
                <main className="flex gap-2 space-y-3 lg:flex-cols-3 md:flex-cols-2 sm:flex-cols-1">
                 
-                 <FunctionalBtns></FunctionalBtns>
+                 <FunctionalBtns name={expectedFriend.name}></FunctionalBtns>
               
                 </main>
              

@@ -22,7 +22,7 @@ const FriendCard = ({datas}) => {
 const {id, name,picture,email, days_since_contact, status,tags} =datas;
     return (
         <Link href={`/${id}`}>
-        <div className="w-[259.5px] h-63.5 bg-white rounded-2xl text-center space-y-3 p-3 shadow-2xl ">
+        <div className="w-[259.5px] hover:shadow-2xl h-63.5 bg-white rounded-2xl text-center space-y-3 p-3 shadow-xl ">
             <Image src={picture} alt={name} width={70} height={70} className="rounded-full mx-auto" />
       <p className="text-lg font-semibold">{name}</p>
      <p>{days_since_contact}d ago</p>
