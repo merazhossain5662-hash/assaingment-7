@@ -33,5 +33,8 @@ A modern and interactive web application to manage and maintain personal relatio
 - Visualize interaction data using charts
 - See percentage of Call, Text, and Video activities
 - Real-time updates based on user actions
+`
+## Aouther 
+### Meraz Hossain
 
 ---
