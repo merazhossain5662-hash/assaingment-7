@@ -4,11 +4,20 @@ import Image from "next/image";
 import { RiDeleteBin6Line, RiNotificationSnoozeLine } from "react-icons/ri";
 import { GoArchive } from "react-icons/go";
 import FunctionalBtns from "../components/FunctionalBtns";
+import NotFound from "../not-found";
 
 const FriendPage = async({params}) => {
     const {FriendId}= await params;
-    const expectedFriend =friends.find((friend)=>friend.id ==FriendId)
+    console.log(friends.length);
+    
+    const FriendIdNum = Number(FriendId)
+    const expectedFriend =friends.find((friend)=>friend.id ==FriendIdNum)
    ;
+//    console.log(FriendIdNum);
+   
+   if ( !expectedFriend){
+    return <NotFound></NotFound>
+   }
     
     return (
         <div className="w-11/12 mx-auto lg:flex justify-center gap-4 bg-base-200">
