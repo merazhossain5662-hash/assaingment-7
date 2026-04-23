@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@netlify/plugin-nextjs": "^5.15.9",
+    "better-auth": "^1.6.7",
     "next": "16.2.3",
     "react": "19.2.4",
     "react-dom": "19.2.4",
@@ -19,6 +20,7 @@
     "recharts": "^3.8.1"
   },
   "devDependencies": {
+    "@gravity-ui/icons": "^2.18.0",
     "@tailwindcss/postcss": "^4",
     "babel-plugin-react-compiler": "1.0.0",
     "daisyui": "^5.5.19",

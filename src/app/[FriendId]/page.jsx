@@ -62,7 +62,7 @@ const FriendPage = async({params}) => {
             </div>
             <div className="max-w-184 h-full bg-white rounded-md p-3.5 shadow space-y-5 my-4 ">
                <p>Quick Check-In</p>
-               <main className="flex gap-2 space-y-3 lg:flex-cols-3 md:flex-cols-2 sm:flex-cols-1">
+               <main className="grid gap-2 space-y-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
                 
                  <FunctionalBtns name={expectedFriend.name}></FunctionalBtns>
               

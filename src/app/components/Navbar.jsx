@@ -10,6 +10,8 @@ import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
   const pathName =usePathname(); 
+  console.log(pathName);
+  
     return (
       <div className="navbar bg-base-100 shadow-sm">
   <div className="flex-1">
